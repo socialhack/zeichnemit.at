@@ -1,0 +1,31 @@
+BODY { font-family: helvetica, sans; 
+       font-size: 15px; 
+       width: 60%;
+       max-width: 650px;
+       margin-left: 20%; }
+
+#title { float: left; 
+         width: 70% ;
+         }
+#logo { float: right;
+        width: 166px;
+        margin-top: 30px;
+        }
+.content {
+        float: left;
+        width: 100%;
+        font-size: 18px;
+        text-align: justify;
+        }
+.footer A {
+        color: #CCCCCC;
+        text-decoration: none;
+        }
+h2 {
+        font-size: 120%;
+        }
+IFRAME { width: 320px;
+        height: 130px;
+        border: none;
+        float: right;
+        }

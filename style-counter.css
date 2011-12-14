@@ -1,0 +1,60 @@
+BODY { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+       font-size: 15px; 
+       width: 300px;
+	   color: #333;
+       }
+H1 {	
+        margin-top: 0px;
+        font-size: 12px; 
+		color:#333;
+        margin-bottom: 5px;}
+.counter {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100px;
+        text-align: center;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #E0E0E0 url('gradient-blue.png') repeat-x;
+        color: #333;
+        }
+.wantbar {
+        position: fixed;
+        top: 65px;
+        background: #FFFFFF;
+        height: 20px;
+        border: 1px solid black;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: white;
+        }
+.havebar {
+        position: fixed;
+        top: 65px;
+        background: #dfcbb9;
+        height: 20px;
+        border: 1px solid black;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        }
+.number {
+        #position: fixed;
+        #top: 65px;
+        margin-top: 10px;
+        font-size: 150%;
+        }
+A {
+        position: fixed;
+        top: 90px;
+        left: 85px;
+        background: #dfcbb9;
+        color: black;
+        padding: 3px;
+        text-decoration: none;
+        font-weight: bold;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid black;
+        }
+                

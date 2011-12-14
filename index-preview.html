@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>zeichnemit.at:
+Stoppt die Vorratsdatenspeicherung - Bürger_inneninitiative für eine Abschaffung der EU-Richtlinie zur Vorratsdatenspeicherung 2006/24/EG.
+</title>
+<style type="text/css">
+body {
+	background-color:#666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin: 3em 2% 2em 2%;
+}
+
+p {
+	line-height:1.4em;
+}
+
+h1 {
+	text-shadow: #CCC 1px 1px;
+}
+
+h2 {
+	font-size:1.4em;
+}
+
+ul {
+	padding-left:2em;
+}
+
+li {
+	list-style: square;
+}
+
+#main {
+	width: 55em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_content {
+	background: #efefef;
+	background-repeat:repeat-x;
+	padding: 1.5em;
+	-moz-border-radius: 0px 15px 15px 15px;
+	border-radius: 0px 15px 15px 15px;
+}
+
+#zeichnemit {
+	color:#EEE;
+	text-shadow: #333 1px 1px;
+	font-size:2em;
+	font-weight:bold;
+	margin:0;
+}
+
+ul#logos {
+	padding: 0;
+	margin:0;
+	text-align:center;
+}
+
+ul#logos li {
+	display:inline;
+	padding: 0 7px 0  7px;
+	margin:0;
+	}
+
+ul#logos li a img {
+	height: 100px;
+	border:0;
+}
+
+#takeaction {
+	margin-left:-1.5em; 
+	background:url(images/dark-bg.png); 
+	height:545px; 
+	width: 55em;
+	color: #AAA;
+}
+
+#takeaction p {
+	margin: 0 0 3px 0;
+}
+
+#takeaction a {
+	color: #AAA;
+	border:0;
+	text-decoration:none;
+}
+#takeaction ul {
+	list-style:none; 
+	margin:0 0 0 30px; 
+	padding:0;
+}
+
+#takeaction ul li {
+	margin-bottom:25px;
+	margin-left:0;
+	list-style:none;
+}
+
+#takeaction ul li ul.socialmedia {
+	margin: 0 0 0 0;
+}
+
+#takeaction ul li ul.socialmedia li {
+	margin: 10px 15px 0 0;
+	width:80px;
+	display:inline;
+	text-align:center;
+	float:left;
+	font-size: 0.9em;
+}
+
+.point {
+	margin-left:-60px;
+	clear:both;
+}
+
+#counterframe {
+	width: 51.5em;
+	margin: 1em 0 2em 0em;
+	border: 2px inset #eee;
+	border-radius: 4px
+}
+
+#counterHave {
+	background-image:url(images/HaveBG.png);
+/*
+	background: linear-gradient(		 top, #c0ee84, #7ec778);
+	background: -moz-linear-gradient(	 top, #c0ee84, #7ec778);
+	background: -webkit-linear-gradient( top, #c0ee84, #7ec778);
+	background: -o-linear-gradient(		 top, #c0ee84, #7ec778);
+	background: -ms-linear-gradient(	 top, #c0ee84, #7ec778);
+*/
+	background-color:#7ec778;
+	border-right:#aec68f 1px solid;
+	height:30px;
+}
+
+#counterNeed {
+	background-image:url(images/NeedBG.png);
+/*
+	background: linear-gradient(		 top, #ccc, #f4f4f4);
+	background: -moz-linear-gradient(	 top, #ccc, #f4f4f4);
+	background: -webkit-linear-gradient( top, #ccc, #f4f4f4);
+	background: -o-linear-gradient(		 top, #ccc, #f4f4f4);
+	background: -ms-linear-gradient(	 top, #ccc, #f4f4f4);
+*/
+	background-color:#f4f4f4;
+	height:30px;
+	width: 100%;
+}
+
+#socialshareprivacy ul li {
+	list-style-type:none;
+}
+
+
+</style>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" src="jquery.expander.js"></script> 
+<script type="text/javascript" src="jquery.socialshareprivacy.js"></script>
+
+<script type="text/javascript">
+
+<!-- Expander -->
+    jQuery(document).ready(function($){
+	
+	$('div.expander').expander({
+	  slicePoint: 355,
+	  widow: 0,
+	  expandText:       '[mehr]',
+	  expandEffect: 'fadeIn',
+	  expandPrefix:     '... ',
+	  expandSpeed:      '800',
+	  userCollapseText: '[zuklappen]'
+	});
+	
+<!-- 2-Click-Buttons -->
+      if($('#socialshareprivacy').length > 0){
+			$('#socialshareprivacy').socialSharePrivacy({
+				services : {
+					facebook : {
+						'perma_option'  : 'off'
+					}, 
+					twitter : {
+						'perma_option' : 'off'
+					},
+					gplus : {
+						'perma_option' : 'off'
+					}
+				}
+			});
+      }
+    });
+	
+<!-- UnterstützerInnen-Counter -->
+	var counterNeed;
+	var counterHave;
+
+	$.getJSON("counter.json", function(json) { 	
+		$('#counterNeedText').prepend(json.need); 
+		counterNeed = json.need; 		
+	});
+	$.getJSON("counter.json", function(json) { 	
+		$('#counterHaveText').prepend(json.have); 
+		counterHave = json.have;
+		counterHave = ( (counterHave*100)/counterNeed )+("%");
+
+		$('#counterHave').width(counterHave); 
+	});
+
+
+	
+<!-- input-text-delete  -->
+
+function clickclear(thisfield, defaulttext) {
+	if (thisfield.value == defaulttext) {
+			thisfield.value = "";
+	}
+}
+function clickrecall(thisfield, defaulttext) {
+	if (thisfield.value == "") {
+		thisfield.value = defaulttext;
+	}
+}
+
+</script>
+
+
+ 
+</head>
+
+<body>
+
+<div id="main">
+
+
+  <div id="main_content">
+  
+  <div style="float:right; margin-top:3em; margin-right:1.5em; margin-left:1em;">
+  	<img src="images/logo.png" />
+  </div>
+  
+    <div id="title">
+    	<p style="color:#888; font-weight:bold; font-size:1.5em; margin-bottom:0;">BürgerInneninitiative:</p>
+        <h1 style="margin-top:0">Stoppt die Vorratsdatenspeicherung!</h1>
+        <p style="font-weight:bold; font-size:1.2em;">BürgerInneninitiative für eine Abschaffung der EU-Richtlinie zur Vorratsdatenspeicherung 2006/24/EG und Evaluation sämtlicher Terrorgesetze.</p>
+    </div>
+
+	<div class="content">
+   <div class="expander">
+
+<p>Am 1. April 2012 tritt in Österreich die Vorratsdatenspeicherung in Kraft. Das bedeutet, dass ab diesem Zeitpunkt die Kommunikations­daten aller BürgerInnen ohne Verdacht <strong>sechs Monate lang </strong>"auf Vorrat" gespeichert werden. Die Polizei kann überprüfen, <strong>mit wem Du, wann, wie lange telefoniert </strong>und vor allem <strong>wo</strong> Du dich zu diesem Zeitpunkt aufgehalten hast. Der Versand und Empfang aller SMS Nachrichten wird mitprotokolliert. Beim <strong>Versenden von E-Mails </strong>werden <strong>Sender, Empfänger und Zeitpunkt</strong> der Nachricht aufgezeichnet. Egal welches Handy du verwendest, dein aktueller <strong>Standort wird mitprotokolliert</strong>. So lassen sich genaue Bewegungsprofile von Handynutzern erstellen.</p>
+
+<p>Überwachung ist immer ein <strong>schwerer Eingriff in die Privatsphäre </strong>eines Menschen. Durch die Vorratsdatenspeicherung wird die Kommunikation aller Menschen in Österreich überwacht, selbst wenn keinerlei Verdacht besteht. Die pauschale Überwachung aller Bürger, geht <strong>gegen die Unschuldsvermutung, gefährdet die Privatsphäre </strong>und ist auch als <strong>Ermittlungsmethode völlig unverhältnismäßig</strong>.</p>
+
+<p>Die österreichische Regierung beruft sich bei diesem Gesetz auf die  EU-Richtline zur Vorratsdatenspeicherung. Andere EU-Länder wie Schweden <strong>sehen aber</strong> die <strong>Grund- und Freiheitsrechte ihrer Demokratie in Gefahr</strong> und haben sich gegen eine Umsetzung entschlossen, stattdessen bekämpfen sie jetzt diese EU-Richtlinie. Das österreichische Parlament hat die Vorratsdatenspeicherung trotzdem verabschiedet. Und das obwohl zu diesem Zeitpunkt die Verfassungsgerichte von Deutschland, Tschechien und Rumänien die Umsetzung der Richtlinie bereits aufgehoben haben.</p>
+
+<p>Im Laufe des letzten Jahrzehnts wurden bereits <strong>zahlreiche Gesetze zur Bekämpfung von Terrorismus</strong> verabschiedet. Deren Wirksamkeit und Nutzen wurden bisher jedoch nie überprüft, stattdessen werden diese Gesetze weiterhin laufend erweitert.</p>
+
+<p><strong>Hilf mit die Vorratsdatenspeicherung abzuschaffen und unterzeichne diese Bürgerinitiative gegen die EU-Richtlinie zur Vorratsdatenspeicherung und zur Überprüfung sämtlicher Terrorgesetze!</strong></p>
+
+</div>
+<ul style="margin-left:0; padding-left:0;"><li style="list-style:url(images/icon_paper.png) inside; margin-left:0;"><a href="initiative_text.html">Text der BürgerInneninitiative</a></li></ul>
+
+<h2>Gesammelte Unterschriften</h2>
+<div id="counterframe">
+	<div id="counterNeed">
+    	<div style="position:absolute; left:50%; margin-left:-100px; width: 200px; text-align:center; padding-top:0.35em; padding-bottom:0.2em; font-size:1.2em; font-weight:bold; text-shadow:#FFF 0px 0px 2px; background:url(images/TextBG.png) center center no-repeat"><span id="counterHaveText"></span> von <span id="counterNeedText"></span></div>
+        <div id="counterHave">
+        </div>
+    </div>
+</div>
+
+<h2>Jetzt mitzeichnen!</h2>
+<div id="takeaction">
+	<div style="padding:30px 0 30px 70px;">
+    	<ul>
+        	<li>
+            	<a href="http://www.parlament.gv.at/PAKT/VHG/XXIV/BI/BI_00036/index.shtml#tab-Zustimmungserklaerung" target="_blank">
+                    <img src="images/nr1.png" alt="1. Jetzt online unterschreiben!" class="point" border="0" />
+                    <p>Direkt auf der Webseite des österreichischen Parlaments unterschreiben.</p>
+                    <p><img src="images/unterschreiben.png" alt="zur BürgerInneninitiative" border="0" /></p>
+                </a>
+            </li>
+            <li>
+    			<img src="images/nr2.png" alt="2. Weitersagen!" class="point" />
+                <p>Mach die Vorratsdatenspeicherung zum Thema und erzähle deinen Freunden von dieser Initiative!</p>
+                <ul class="socialmedia">
+                	<li>                    
+<a href="mailto:?Subject=Initiative gegen Vorratsdatenspeicherung in Österreich&Body=Guten%20Tag!%0A%0AIch%20möchte%20auf%20die%20BürgerInneninitiative%20für%20die%20Abschaffung%20der%20Vorratsdatenspeicherung%20in%20Österreich%20aufmerksam%20machen.%0A%0ABitte%20unterstütze%20auch%20du%20die%20Initiative!%0A%0Ahttps://zeichnemit.at%0A%0ALG%0A"><img src="images/email.png" border="0" />  
+
+<p>E-Mail</p></a>
+</li>                
+                	<li><a href="http://www.facebook.com/share.php?u=https://zeichnemit.at&title=Zeichne%20mit%20gegen%20die%20Vorratsdatenspeicherung%20in%20Österreich!%20https://zeichnemit.at%20#vds%20#initiative" target="_blank"><img src="images/facebook.png" border="0" /><p>Facebook</p></a></li>
+                    
+
+                    
+                	<li><a href="http://twitter.com/home?status=Zeichne%20mit%20gegen%20die%20Vorratsdatenspeicherung%20in%20Österreich!%20https://zeichnemit.at%20#vds%20#initiative" target="_blank"><img src="images/twitter.png" border="0" /><p>Twitter</p></a></li>
+                    
+                    
+                    
+               	  <li><a href="https://m.google.com/app/plus/x/?v=compose&amp;content=Zeichne%20mit%20gegen%20die%20Vorratsdatenspeicherung%20in%20Österreich!%20https://zeichnemit.at%20#vds%20#initiative"><img src="images/gplus.png" border="0" /><p>Google+</p></a></li>
+
+               	  <li>
+                    <div id="diaspora" style="margin-left:auto; margin-right:auto; margin-bottom: 3px; cursor:pointer; width: 45px;height:45px; background:url('images/diaspora.png') no-repeat left top; background-position:0px 0px;" onClick="javascript:(function(){f='https://joindiaspora.com/bookmarklet?url='+encodeURIComponent(window.location.href)+'&title='+encodeURIComponent('Zeichne mit gegen die Vorratsdatenspeicherung in Österreich! #vds #akvorrat')+'&v=1&';if(!window.open(f+'noui=1&jump=doclose','diasporav1','location=no,links=no,scrollbars=no,toolbar=no,width=400,height=300')){location.href=f+'jump=yes'; 
+document.getElementById('diaspora').style.backgroundPosition = '0 0';}else{document.getElementById('diaspora').style.backgroundPosition = '0 0';}})()"> </div>
+
+                  <p>Diaspora*</p></li>
+                </ul>
+                <div style="clear:both;"></div>
+            </li>
+            <li>
+    			<img src="images/nr3.png" alt="3. Informiert bleiben!" class="point" />
+                <p>Wir werden noch weitere Aktionen gegen die Vorratsdatenspeicherung starten. <br />
+Trag dich in den AK Vorrat Newsletter ein um informiert zu bleiben! Wir spammen nicht, versprochen.</p>
+				<div style="background:url(images/newsletter.png) no-repeat; width:293px; height:37px; margin-top:10px">
+                    <form method="post" action="http://eight.pairlist.net/mailman/subscribe/vds-info">
+                        <div style="float:left;"><input style="height:37px; width:173px; padding-left:15px; background:none; border:0; font-size:1.2em; color:#333;" name="email" value="Deine E-Mail Adresse" type="text" onclick="clickclear(this, 'Deine E-Mail Adresse')" onblur="clickrecall(this,'Deine E-Mail Adresse')"></div>
+                        <div style="float:left;"><input style="height:37px; width:103px; background: none; border:none; cursor:pointer" value="" class="subscribe-submit" type="submit"></div>
+                    </form>
+				</div>
+        	</li>
+        </ul>
+    </div>
+</div>
+        
+        <h2>Informationen</h2>
+      <ul>
+          <li><a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32006L0024:de:HTML">EUR-Lex</a> - Betreffende EU-Richtline zur Vorratsdatenspeicherung 2006/24/EG</li>
+          <li><a href="http://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2011_I_27/BGBLA_2011_I_27.html">RIS</a> - Betreffendes Bundesgesetzblatt im Rechtsinformationssystem des Bundeskanzleramtes</li>
+          <li><a href="http://www.akvorrat.at">AKVorrat.at</a> - Plattform gegen die Vorratdstenspeicherung in Österreich</li>
+          <li><a href="http://wiki.akvorrat.at">AKVorrat Wiki</a> - Umfangreiche Informationen über die Vorratsdatenspeicherung</li>
+          <li><a href="http://www.talkinganthropology.org/2011/04/07/ta27-vorratsdatenspeicherung/">Talking Anthropology</a> - Podcast mit Steinhauser und Tschohl über die VDS</li>
+          <li><a href="http://www.bytegefluester.org/bgfl003-vorratsdatenspeicherung/">bytegeflüster</a> - Podcast zu dieser BürgerInneninitiative</li>
+          <li><a href="http://taalk.at/videos/taalk-vorratsdatenspeicherung/">taalk.at</a> - Video: Diskussionsrunde zur VDS</li>
+          <li><a href="http://www.youtube.com/watch?v=6HgFIxyXZu4">Every step you take</a> - Video: q/talk spezial zum Thema VDS mit Malte Spitz</li>
+          <li><a href="http://ichmachpolitik.at/questions/1263">Freiheit statt Angst Tag 2011</a> - Video: Infos zum AK Vorrat und zur geplanten Verfassungsklage gegen VDS</li>
+          <li><a href="http://gegenvds.at">GegenVDS</a> - Organisationsplattform für Demonstrationen gegen die VDS</li>
+</ul>
+        
+      <h2>Material</h2>
+      <ul>
+        <li><a href="pagepeel/">Pagepeel</a> -  Verpasse deiner Webseite ein Eselsohr!</li>
+        <li><a href="#">Banner</a> - in verschiedenen Farben und Formen</li>
+        <li><a href="qrcodes/">QR Codes</a> - zum selbst ausdrucken.</li>
+      </ul>
+<h2>Unterst&uuml;tzerInnen</h2>
+      <p>Diese Initiative des <a href="http://akvorrat.at">AK Vorrat</a> wird von verschiedenen Vereinen, Gruppen und Plattformen unterstützt.</p>
+      <ul><li><a href="http://www.akvorrat.at/Unterstuetzer">zu den UnterstützerInnen</a></li></ul>
+        
+    </div>
+    <div style=" text-align:center; margin-top:15px; padding-top:5px; border-top: #AAA 1px solid;">
+       <a href="impressum.html" style="color: #999; text-decoration:none;">Impressum</a>
+    </div>
+
+  </div>
+  <div id="socialshareprivacy" style="margin-left:100px;"></div>
+
+</div>
+
+
+</body>
+</html>

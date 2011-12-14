@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+Stoppt die Vorratsdatenspeicherung - Bürger_inneninitiative für eine Abschaffung der EU-Richtlinie zur Vorratsdatenspeicherung 2006/24/EG.
+</title>
+<style type="text/css">
+body {
+	background-color:#666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin: 70px 15px 40px 15px;
+}
+
+p {
+	line-height:1.4em;
+}
+
+h1 {
+	text-shadow: #CCC 1px 1px;
+}
+
+#main {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_content {
+	background: #FFF;
+	padding: 1.5em;
+	-moz-border-radius: 0px 15px 15px 15px;
+	border-radius: 0px 15px 15px 15px;
+}
+
+#zeichnemit {
+	color:#EEE;
+	text-shadow: #333 1px 1px;
+	font-size:2em;
+	font-weight:bold;
+	margin:0;
+}
+
+ul#logos {
+	padding: 0;
+	margin:0;
+	text-align:center;
+}
+
+ul#logos li {
+	display:inline;
+	padding: 0 7px 0  7px;
+	margin:0;
+	}
+
+ul#logos li a img {
+	height: 100px;
+	border:0;
+}
+
+</style>
+
+
+<link href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				mp3:"http://www.bytegefluester.org/media/podcasts/BGFL003_Vorratsdatenspeicherung.mp3"
+			});
+		},
+		swfPath: "js",
+		supplied: "mp3",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
+
+</head>
+
+<body>
+<div id="main">
+
+
+  <p id="zeichnemit">zeichnemit.at</p>
+  <div id="main_content">
+
+    <div id="title">
+        <h1>Stoppt die Vorratsdatenspeicherung</h1>
+        <p style="font-weight:bold; font-size:1.4em;">Bürger_inneninitiative für eine
+        Abschaffung der EU-Richtlinie zur Vorratsdatenspeicherung 2006/24/EG und
+        Evaluation sämtlicher Terrorgesetze.</p>
+    </div>
+
+
+
+    <div class="content">
+        <iframe frameborder="0" style="width:308px; height: 120px; border: none; float:right; margin-right:4px;" scrolling="no" src="counter-internal.html" >
+        </iframe>
+        
+        <p>Ab  1. April 2012 wird in Österreich von <strong>jedem Telefonat</strong>, <strong>jeder E-Mail</strong> und jedes mal wenn sich jemand mit dem Internet verbindet, sogenannte "Verbindungsdaten" sechs Monate lang <strong>gespeichert</strong>. Aus diesen Daten erkennt man, wer wen kennt und bei Gesprächen mit Mobiltelefonen, wer wann wo war. Argumentiert wurde in Österreich vor allem, dass uns die EU mit einer Richtlinie dazu zwingt die Vorratsdatenspeicherung umzusetzen. Das ist eine faule Ausrede, denn auch Österreich hat in der EU ein Mitbestimmungsrecht!
+Die österreichische Regierung hat es versäumt sich bei der Vorratsdatenspeicherung auf EU-Ebene für die Bürger_innen einzusetzen! Der Nationalrat hat die Möglichkeit der Regierung Aufträge für ihre Arbeit in Brüssel zu geben. Mit dieser Bürger_innneninitiative wollen wir erreichen, dass der Nationalrat der Regierung den Auftrag gibt für eine <strong>Abschaffung der EU-Richtlinie zur Vorratsdatenspeicherung</strong> einzutreten. Auch wollen wir erreichen, dass sämtliche Terrorgesetze in Österreich evaluiert und gegebenenfalls abgeschafft werden. Eine ähnliche Initiative wurde im deutschen Bundestag eingereicht (<a href="http://zeichnemit.de">zeichnemit.de</a>).</p>
+
+<h2>Jetzt unterst&uuml;tzen!</h2>
+<div style="margin-left:-1.5em;"><a href="download/stopp-vorratsdaten-initiative.pdf" target="_new"><img border="0" src="images/howto-700.png" width="700" height="528" /></a></div>
+<p style="font-weight:bold; color:#990000;">Die Einreichfrist für analoge Unterstützungen wurde bis 7. Dezember 2011 verlängert!</p>
+<p>Unterschriftenlisten können auch bei folgenden Sammelstellen abgegeben werden:</p>
+<ul>
+	<li>AKVorrat.at, Westbahnstraße 46/1A, 1070 Wien</li>
+	<li>Metalab, Rathausstraße 6, 1010 Wien (Fach: Mihi)</li>
+	<li>Sender.fm, Neubaugasse 12-14, 1070 Wien </li>
+</ul>
+
+
+<p style="font-weight:bold;">Ab Mitte Dezember 2011 kann die Initiative auch online unterstützt werden!</p>
+
+<p>Jetzt den AK Vorrat Newsletter abonnieren um informiert zu bleiben!</p>
+<form method="post" action="http://eight.pairlist.net/mailman/subscribe/vds-info">
+<input name="email" class="subscribe-text" size="19" value="Ihre E-Mail Adresse" type="text"> 
+<input value="Abonnieren" class="subscribe-submit" type="submit">
+</form>
+
+        
+        <h2>Material</h2>
+        <p>
+        <ul>
+            <li><a href="download/Buerger_inneninitiative-SVDS.pdf">Text der Bürger_inneninitiative (PDF)</a></li>
+            <li><a href="download/Unterschriften-SVDS.pdf">Unterschriftenbogen (PDF)</a></li>
+            <li>Counter Widget:<br /> 
+              <code style=" font-size:11px;">&lt;iframe src="https://zeichnemit.at/counter.html" style="width:320px; height:130px; border:none"&gt;&lt;/iframe&gt;</code></li>
+            <li>Banner <a href="http://p154.at/other/gegenvds-banner2.jpg">hier</a> und <a href="http://www.gegenvds.at/images/banners/vds-initiative-b.jpg">hier</a></li>
+        </ul>
+        </p>
+      <h2>Mehr Information zur Vorratsdatenspeicherung</h2>
+
+<div id="podcastbox" style="background-color:#EEE; padding-bottom:10px;">
+<div style="width:320px; float:left; margin-left: 20px;">
+	<a href="http://www.bytegefluester.org/bgfl003-vorratsdatenspeicherung/"><img src="images/podcast.png" border="0" align="Podcast" style="float:left; margin: 13px 15px 0 0" /></a>
+ <p><span style="font-size:0.8em; line-height: 1.1em; color:#444;">bytegeflüster Podcast zum Thema</span><br /> 
+   <b>Vorratsdatenspeicherung in Österreich</b><br />
+   mit Michael Bauer vom AK Vorrat</p>
+</div>
+                    
+<div id="podcastplayer" style="margin: 0 0 0 350px; padding-top:5px;">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        
+        <div id="jp_container_1" class="jp-audio">
+                    <div class="jp-type-single">
+                        <div class="jp-gui jp-interface">
+                            <ul class="jp-controls">
+                                <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                            </ul>
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar"></div>
+                                </div>
+                            </div>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value"></div>
+                            </div>
+                            <div class="jp-time-holder">
+                              <div class="jp-current-time"></div>
+                                <div class="jp-duration"></div>
+                            </div>
+                        </div>
+        
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+</div>
+</div>
+
+
+<ul>
+          <li><a href="http://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2011_I_27/BGBLA_2011_I_27.html">RIS</a> - Betreffendes Bundesgesetzblatt im RIS</li>
+          <li><a href="http://www.akvorrat.at">AKVorrat.at</a> - Platform gegen die Vorratdstenspeicherung in Österreich</li>
+          <li><a href="http://wiki.akvorrat.at">AKVorrat Wiki</a> - Umfangreiche Informationen über die Vorratsdatenspeicherung</li>
+          <li><a href="http://gegenvds.at">GegenVDS</a> - Demonstrationen gegen die Vorratdstenspeicherung</li>
+</ul>
+        
+      <h2>Unterst&uuml;tzerInnen</h2>
+      <p>Diese Initiative des AKVorrat wird von verschiedenen Vereinen, Gruppen und Platformen unterstützt.</p>
+      <ul><li><a href="http://www.akvorrat.at/Unterstuetzer">zu den UnterstützerInnen</a></li></ul>
+        
+    </div>
+    <div style=" text-align:center; margin-top:15px; padding-top:5px; border-top: #AAA 1px solid;">
+       <a href="impressum.html" style="color: #999; text-decoration:none;">Impressum</a>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
